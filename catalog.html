@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Гостинницы Седоны</title>
 </head>
 <body>
@@ -56,7 +56,7 @@
 </section>
 
 <section class="hotel-filter">
-  <h2 class="visually-hidden">Список товаров с фильтрами</h2>
+  <h2 class="visually-hidden">Фильтр гостиниц</h2>
   <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
 
 
@@ -109,7 +109,7 @@
   </fieldset>
 
       <fieldset class="hotel-filter-group">
-        <legend class="hotel-filter-title">Стоимость, &#8381;:</legend>
+        <legend class="hotel-filter-title">Стоимость, ₽:</legend>
         <ul class="hotel-filter-list">
           <li class="hotel-filter-item">
               <input class="control-input" type="number" name="price-min" value="0" placeholder="от">
@@ -127,8 +127,10 @@
   </form>
   </section>
 
-<section>
-<p class="hotel-hotel-text">Найдено гостиниц:
+<div class="selection-parameters">
+<section class="search-hotel">
+  <h2 class="visually-hidden">Поиск гостиниц</h2>
+<p class="hotel-search-text">Найдено гостиниц:
   <span class="result">38</span>
 </p>
 <select class="select-control" aria-label="Сортировка">
@@ -157,11 +159,11 @@
 
 <section class="catalog-hotel">
   <ul class="hotel-list">
-    <li class="hotel-card-link">
+    <li class="hotel-card">
       <img class="hotel-card-image" src="#" alt="Вид из гостиницы Amara Resort & Spa">
       <h3 class="hotel-card-title">Amara Resort & Spa</h3>
       <p class="hotel-card-type">Гостиница</p>
-      <p class="hotel-card-price">от 4000 &#8381;</p>
+      <p class="hotel-card-price">от 4000 ₽</p>
       <a class="button button-details" href="#">Подробнее</a>
       <button class="button button-favourite" type="button">В избранное</button>
       <p class="star-rating star-rating-4">
@@ -169,11 +171,11 @@
       </p>
       <p class="hotel-card-rating">Рейтинг: 8,5</p>
     </li>
-    <li class="hotel-card-link">
+    <li class="hotel-card">
       <img class="hotel-card-image" src="#" alt="Вид из гостиницы Villas at Poco Diablo">
       <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
       <p class="hotel-card-type">Гостиница</p>
-      <p class="hotel-card-price">от 5000 &#8381;</p>
+      <p class="hotel-card-price">от 5000 ₽</p>
       <a class="button button-details" href="#">Подробнее</a>
       <button class="button button-favourite button in-favourite" type="button">В избранном</button>
       <p class="star-rating star-rating-4">
@@ -181,11 +183,11 @@
       </p>
       <p class="hotel-card-rating">Рейтинг: 9,2</p>
     </li>
-    <li class="hotel-card-link">
+    <li class="hotel-card">
       <img class="hotel-card-image" src="#" alt="Вид из гостиницы Desert Quail Inn">
       <h3 class="hotel-card-title">Desert Quail Inn</h3>
       <p class="hotel-card-type">Гостиница</p>
-      <p class="hotel-card-price">от 2500 &#8381;</p>
+      <p class="hotel-card-price">от 2500 ₽</p>
       <a class="button button-details" href="#">Подробнее</a>
       <button class="button button-favourite" type="button">В избранное</button>
       <p class="star-rating star-rating-4">
@@ -193,11 +195,11 @@
       </p>
       <p class="hotel-card-rating">Рейтинг: 6,9</p>
     </li>
-    <li class="hotel-card-link">
+    <li class="hotel-card">
       <img class="hotel-card-image" src="#" alt="Вид из гостиницы GreenTree Inn">
       <h3 class="hotel-card-title">GreenTree Inn</h3>
       <p class="hotel-card-type">Гостиница</p>
-      <p class="hotel-card-price">от 1500 &#8381;</p>
+      <p class="hotel-card-price">от 1500 ₽</p>
       <a class="button button-details" href="#">Подробнее</a>
       <button class="button button-favourite" type="button">В избранное</button>
       <p class="star-rating star-rating-4">
@@ -206,29 +208,27 @@
       <p class="hotel-card-rating">Рейтинг: 5,0</p>
     </li>
   </ul>
+    <ul class="pagnation-list">
+      <li class="pagnation-item">
+        <button class="pagnation-button pagnation-button-current" type="button">1</button>
+      </li>
+      <li class="pagnation-item">
+        <button class="pagnation-button" type="button">2</button>
+      </li>
+      <li class="pagnation-item">
+        <button class="pagnation-button" type="button">3</button>
+      </li>
+      <li class="pagnation-item">
+        <button class="pagnation-button" type="button">4</button>
+      </li>
+      <li>
+        <span class="pagnation-space-item">...</span>
+      </li>
+      <li>
+        <button class="pagnation-button" type="button">10</button>
+      </li>
+    </ul>
 </section>
-
-<div class="pagnation">
-  <ul class="pagnation-list">
-    <li class="pagnation-item">
-      <button class="pagnation-button pagnation-button-current" type="button">1</button>
-    </li>
-    <li class="pagnation-item">
-      <button class="pagnation-button" type="button">2</button>
-    </li>
-    <li class="pagnation-item">
-      <button class="pagnation-button" type="button">3</button>
-    </li>
-    <li class="pagnation-item">
-      <button class="pagnation-button" type="button">4</button>
-    </li>
-    <li>
-      <span class="pagnation-space-item">...</span>
-    </li>
-    <li>
-      <button class="pagnation-button" type="button">10</button>
-    </li>
-  </ul>
 </div>
 
 <section class="subscribe">
