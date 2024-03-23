@@ -7,10 +7,11 @@
   <base href="https://htmlacademy-htmlcss.github.io/2410453-sedona-1/4/">
 </head>
 <body>
+  <div class="container">
   <header class="page-header">
     <nav class="navigation">
      <a class="navigation-logo" href="index.html">
-     <img class="page-header-logo" src="images/Logo-sedona-1.svg"
+     <img class="page-header-logo" src="images/logo-sedona.svg"
      width="140"
      height="70"
      fill="none"
@@ -53,7 +54,7 @@
 
   </header>
   <main class="main-inner">
-    <!-- <---------------------------------------------------------------->
+
     <div class="selection-parameters-filter">
       <section class="inner-header">
         <h1 class="header-title">Гостинницы Седоны</h1>
@@ -122,10 +123,10 @@
         <legend class="catalog-filter-title">Стоимость, ₽:</legend>
         <ul class="hotel-filter-list">
           <li class="hotel-filter-item">
-              <input class="control-input-prise-1" type="number" name="price-min" value="0" placeholder="от">
+              <input class="control-input-prise-from" type="number" name="price-min" value="0" placeholder="от">
           </li>
           <li class="hotel-filter-item">
-            <input class="control-input-prise-2" type="number" name="price-min" value="9000" placeholder="до">
+            <input class="control-input-prise-before" type="number" name="price-min" value="9000" placeholder="до">
         </li>
         <li class="hotel-filter-item">
           <input class="control-input-calculation" type="range" name="range-min" min="0" max="18000" value="9000">
@@ -139,7 +140,7 @@
   </form>
   </section>
 </div>
-<!-- <---------------------------------------------------------------->
+
 <div class="selection-parameters-search">
 <section class="search-hotel">
   <h2 class="visually-hidden">Поиск гостиниц</h2>
@@ -272,30 +273,30 @@
   </ul>
     <ul class="pagnation-list">
       <li class="pagnation-item">
-        <button class="pagnation-button pagnation-button-current" type="button">1</button>
+        <a class="pagnation-link pagnation-current-link">1</a>
       </li>
       <li class="pagnation-item">
-        <button class="pagnation-button" type="button">2</button>
+        <a class="pagnation-link" href="#">2</a>
       </li>
       <li class="pagnation-item">
-        <button class="pagnation-button" type="button">3</button>
+        <a class="pagnation-link" href="#">3</a>
       </li>
       <li class="pagnation-item">
-        <button class="pagnation-button" type="button">4</button>
+        <a class="pagnation-link" href="#">4</a>
       </li>
       <li>
         <span class="pagnation-space-item">...</span>
       </li>
-      <li>
-        <button class="pagnation-button" type="button">10</button>
+      <li class="pagnation-item">
+        <a class="pagnation-link" href="#">10</a>
       </li>
     </ul>
 </section>
 </div>
 
-<section class="subscribe-catalog">
-  <h2 class="subscribe-title-catalog">Подпишись на рассылку</h2>
-  <p class="subscribe-description-catalog">Только полезная информация и никакого спама, <br> честное бойскаутское!</p>
+<section class="subscribe subscribe-simple">
+  <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
+  <p class="subscribe-description">Только полезная информация и никакого спама, <br> честное бойскаутское!</p>
   <form class="subscribe-form" action="https://eho.htmlacademy.ru/" method="post">
     <label class="visually-hidden" for="subscribe-email">Ваш e-mail</label>
     <input class="field" placeholder="Ваш e-mail" type="email" name="subscribe-email" id="subscribe-email" required>
@@ -338,5 +339,6 @@
   </svg>
 </a>
 </footer>
+</div>
 </body>
 </html>
