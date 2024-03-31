@@ -18,7 +18,9 @@
 
 /* --------- index.html --------- */
 
-
+html {
+  height: 100%;
+}
 
 body {
   margin: 0;
@@ -41,6 +43,8 @@ body {
   background-color: #ffffff;
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
 }
+
+
 *,
 *:before,
 *:after {
@@ -51,13 +55,18 @@ body {
 /* --------- header --------- */
 
 
-.page-header {
-  color: #000000;
-  background-color: #ffffff;
+.page-header-logo {
+  width: 136px;
+  height: 64px;
+  margin-left: 70px;
+}
+
+.container-header {
+  align-items: center;
+  display: flex;
 }
 
 .navigation-link {
-  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.18;
@@ -66,20 +75,40 @@ body {
   text-decoration: none;
 }
 
+.navigation-list {
+  margin: 0;
+  margin-left: 30px;
+  padding-left: 16px;
+  padding-right: 16px;
+  list-style-type: none;
+  display: flex;
+  column-gap: 32px;
+}
+
+.navigation-user {
+  list-style-type: none;
+  padding-right: 20px;
+  padding-left: 280px;
+  margin: 0;
+  display: flex;
+  column-gap: 24px;
+}
+
 .header-button {
-  display: block;
+  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.18;
+  text-decoration: none;
   text-transform: uppercase;
   text-align: center;
   color: #fff;
-  text-decoration: none;
   border-radius: 4px;
   padding: 8px 16px;
   width: 160px;
   height: 36px;
-  background: #756157;
+  background-color: #756157;
+
 }
 
 /* --------- header --------- */
