@@ -740,11 +740,10 @@ body {
     text-transform: uppercase;
     text-align: center;
     color: #000;
-    display: flex;
     background-color: #f2f2f2;
     padding: 18px 25px;
     width: 60px;
-    height: 60px;
+    min-height: 60px;
     border-radius: 4px;
   }
 
@@ -758,7 +757,6 @@ body {
     padding: 18px 25px;
     width: 60px;
     min-height: 60px;
-
   }
 
   .pagnation-link:not(.pagnation-current-link){
@@ -770,7 +768,6 @@ body {
     color: #fff;
     padding: 18px 25px;
     background-color: #82b3d3;
-    display: flex;
     border-radius: 4px;
     width: 60px;
     min-height: 60px;
