@@ -75,7 +75,7 @@ body {
 }
 
 .navigation-list {
-  max-width: 1200px;
+  max-width: 600px;
   flex-wrap: wrap;
   display: flex;
   margin: 0;
@@ -84,12 +84,15 @@ body {
 }
 
 .navigation-user {
+  max-width: 220px;
+  flex-wrap: wrap;
+  display: flex;
   padding: 0;
   margin: 0;
-  display: flex;
 }
 
 .navigation-link {
+  display: block;
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 20px;
@@ -161,6 +164,8 @@ body {
   text-transform: uppercase;
   text-align: center;
   color: #000;
+  margin: 0;
+  margin-bottom: 20px;
 }
 
 .section-subtitle {
@@ -169,6 +174,8 @@ body {
   line-height: 1.18;
   text-align: center;
   color: #333;
+  margin: 0;
+  padding: 0;
 }
 
 .section-title-container {
