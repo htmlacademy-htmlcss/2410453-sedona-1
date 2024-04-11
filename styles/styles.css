@@ -142,6 +142,7 @@ body {
 
 
 .hero {
+  display: block;
   background-image:
   url("../images/image-mountains-vector.svg"),
   url("../images/image-mountains.jpg");
@@ -149,7 +150,7 @@ body {
   background-position: center bottom, center;
   background-size: 1200px 57px, cover;
   text-align: center;
-  min-height: 486px;
+  min-height: 487px;
   padding: 51px;
 }
 
