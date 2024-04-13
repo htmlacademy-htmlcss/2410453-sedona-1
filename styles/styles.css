@@ -136,11 +136,6 @@ body {
   flex-grow: 1;
 }
 
-.main-index {
-  text-align: center;
-}
-
-
 .hero {
   display: block;
   background-image:
@@ -153,7 +148,6 @@ body {
   min-height: 487px;
   padding: 51px;
 }
-
 
 .advantages-list,
 .navigation-list,
@@ -195,15 +189,17 @@ body {
   margin-bottom: 69px;
   margin-left: auto;
   margin-right: auto;
-  max-width: 1200px;
+  max-width: 660px;
   max-height: 261px;
 }
 
-
 .advantages-item-container {
-  padding: 103px 85px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 85px 85px;
   width: 400px;
-  height: 385px;
+  min-height: 385px;
 }
 
 .advantages-list {
@@ -214,6 +210,7 @@ body {
 }
 
 .advantages-item {
+  min-height: 385px;
   background-color: rgba(131, 179, 211, 0.12);
  }
 
@@ -226,7 +223,6 @@ body {
   background-color:#82b3d3;
   color: #ffffff;
  }
-
 
 .advantages-item-title {
   margin: 0;
@@ -252,16 +248,14 @@ body {
   color: #ffffff;
 }
 
-
 .infrastructure-title-container {
   margin-top: 64px;
   margin-bottom: 64px;
   margin-left: auto;
   margin-right: auto;
-  max-width: 1200px;
+  max-width: 660px;
   max-height: 246px;
 }
-
 
 .infrastructure-item {
   padding: 80px 85px;
@@ -306,7 +300,6 @@ body {
   background-color: rgba(131, 179, 211, 0.12);
 }
 
-
 .search-title-container {
   margin-top: 96px;
   margin-bottom: 54px;
@@ -316,6 +309,13 @@ body {
   max-height: 406px;
 }
 
+.search {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .search-button {
   border-radius: 4px;
   font-weight: 700;
@@ -323,16 +323,12 @@ body {
   line-height: 1.18;
   text-align: center;
   color: #ffffff;
-  padding: 12px 50px;
+  padding: 13px 50px;
   min-height: 52px;
   background: #756157;
   text-decoration: none;
   text-transform: uppercase;
 }
-
-
-
-
 
 .subscribe {
   margin-top: 96px;
@@ -354,8 +350,6 @@ body {
 .subscribe-description {
   color: #333333;
 }
-
-
 
 .subscribe-title {
   margin: 0;
@@ -420,18 +414,16 @@ body {
   align-items: center;
   justify-content: space-between;
   display: flex;
-  width: 1200px;
+  max-width: 1200px;
   min-height: 120px;
 }
 
-
 .footer-list {
+  display: flex;
+  flex-wrap: wrap;
   max-width: 200px;
   padding: 0;
-  column-gap: 15px;
-  display: flex;
 }
-
 
 .footer-link {
   display: flex;
@@ -442,7 +434,6 @@ body {
   height: 40px;
 }
 
-
 .footer-numder {
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
@@ -452,9 +443,6 @@ body {
   text-align: center;
   color: #000000;
 }
-
-/* ------------------------------------------------------------------------------------------------------------------- */
-
 
 .selection-parameters-filter {
   background-image: url("../images/filter-hotel.jpg");
@@ -469,7 +457,6 @@ body {
   padding-bottom: 70px;
 }
 
-
 .header-title {
   margin: 0;
   padding: 0;
@@ -478,7 +465,6 @@ body {
   line-height: 1.18;
   color: #ffffff;
 }
-
 
 .breadcrumbs {
   margin: 0;
@@ -529,7 +515,6 @@ body {
   padding: 0;
 }
 
-
 .catalog-filter-title {
   font-weight: 700;
   font-size: 20px;
@@ -537,7 +522,6 @@ body {
   text-transform: capitalize;
   color: #ffffff;
 }
-
 
 .button-filter {
   margin-top: 42px;
@@ -647,23 +631,21 @@ body {
   gap: 8px;
 }
 
+.show-buttons-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  border: 2px solid #e5e5e5;
+  border-radius: 4px;
+  padding: 6px;
+ }
+
 .button-current {
-  border: 2px solid #000000;
-  border-radius: 4px;
-  padding: 14px 14px;
- }
+  border-color: #000000;
+}
 
- .button-one-list {
-  border: 2px solid #e5e5e5;
-  border-radius: 4px;
-  padding: 14px 12px;
- }
-
- .button-full-list {
-  border: 2px solid #e5e5e5;
-  border-radius: 4px;
-  padding: 14px 12px;
- }
 
 /* ------------------------------------------------------------------------------------------------------------------- */
 
@@ -781,10 +763,11 @@ body {
 /* ------------------------------------------------------------------------------------------------------------------- */
 
   .pagnation-list {
+    display: flex;
+    flex-wrap: wrap;
     margin: 40px 70px;
     padding: 0;
-    display: flex;
-    column-gap: 8px;
+    gap: 8px;
   }
 
   .pagnation-link {
