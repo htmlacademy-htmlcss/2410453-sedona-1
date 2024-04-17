@@ -737,7 +737,8 @@ body {
   background-size: 18px 17px;
   background-repeat: space;
   height: 18px;
-  margin-top: 8px;
+  margin-top: 10px;
+  margin-bottom: 9px;
 }
 
 .star-rating-4 {
