@@ -441,14 +441,11 @@ body {
   background-image: url("../images/filter-hotel.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  }
-
-.selection-parameters-filter {
   padding-left: 70px;
   padding-right: 70px;
   padding-top: 35px;
   padding-bottom: 70px;
-}
+  }
 
 .header-title {
   margin: 0;
@@ -479,21 +476,23 @@ body {
 }
 
 .hotel-filter-group-container {
-  gap: 155px;
+  width: 1060px;
+  column-gap: 155px;
   display: flex;
 }
 
 .catalog-filter-container {
-  gap: 70px;
+  column-gap: 60px;
   display: flex;
 }
 
 .catalog-prise-container {
-  gap: 70px;
+  column-gap: 60px;
   display: flex;
 }
 
 .hotel-filter-list {
+  min-width: 150px;
   padding: 0;
 }
 
@@ -532,6 +531,7 @@ body {
   width: 143px;
   height: 48px;
   border: 0;
+  background: #f2f2f2;
 }
 
 .control-input-prise-before {
@@ -540,6 +540,7 @@ body {
   width: 143px;
   height: 48px;
   border: 0;
+  background: #f2f2f2;
 }
 
 .control-input-calculation {
@@ -551,7 +552,7 @@ body {
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.18;
+  line-height: 1.25;
   text-transform: uppercase;
   text-align: center;
   color: #ffffff;
@@ -635,17 +636,10 @@ body {
 }
 
 
+
 .hotel-list {
   padding: 0;
   margin: 0;
-}
-
-.hotel-card {
-  border: 1px solid #e6e6e6;
-  border-radius: 4px;
-  padding: 20px;
-  width: 340px;
-  min-height: 438px;
 }
 
 .catalog-hotel-container {
@@ -656,11 +650,17 @@ body {
   gap: 20px;
 }
 
-.hotel-card-container {
+.hotel-card {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr  1fr;
+  grid-template-rows: 1fr;
   row-gap: 16px;
   column-gap: 20px;
+  border: 1px solid #e6e6e6;
+  border-radius: 4px;
+  padding: 20px;
+  width: 340px;
+  min-height: 438px;
 }
 
 .hotel-card-title {
@@ -673,6 +673,7 @@ body {
 }
 
 .hotel-card-link {
+  grid-column: 1 / -1;
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 24px;
@@ -730,6 +731,27 @@ body {
   background: #82b3d3;
 }
 
+.star-rating {
+  background-position: center;
+  background-image: url(../images/icon-stars.svg);
+  background-size: 18px 17px;
+  background-repeat: space;
+  height: 18px;
+  margin-top: 8px;
+}
+
+.star-rating-4 {
+  width: 72px;
+}
+
+.star-rating-3 {
+  width: 54px;
+}
+
+.star-rating-2 {
+  width: 36px;
+}
+
 .button-in-favourite {
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
@@ -744,6 +766,8 @@ body {
   min-height: 36px;
   background: #7db54f;
 }
+
+
 
 .hotel-card-rating {
   margin: 0;
