@@ -635,19 +635,12 @@ body {
   border-color: #000000;
 }
 
-
-
 .hotel-list {
-  padding: 0;
-  margin: 0;
-}
-
-.catalog-hotel-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  margin: 40px 70px;
-  width: 1060px;
+  padding: 40px 70px;
   gap: 20px;
+  margin: 0;
 }
 
 .hotel-card {
