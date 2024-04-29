@@ -154,17 +154,21 @@
       <fieldset class="hotel-filter-group">
         <legend class="catalog-filter-title">Стоимость, ₽:</legend>
         <ul class="hotel-filter-list">
-          <div class="input-prise">
-          <li class="hotel-filter-item">
+          <!-- <div class="input-prise"> -->
+          <li class="hotel-prise-item">
               <input class="input-prise-min" type="number" name="price-min" value="0" placeholder="от">
+              <input class="input-prise-max" type="number" name="price-max" value="9000" placeholder="до">
           </li>
-          <li class="hotel-filter-item">
-            <input class="input-prise-max" type="number" name="price-max" value="9000" placeholder="до">
-        </li>
-      </div>
-        <li class="hotel-filter-item">
-          <input class="input-calculation" type="range" name="range-min" min="0" max="18000" value="9000">
-      </li>
+          <!-- <li class="hotel-filter-item"> -->
+
+        <!-- </li> -->
+      <!-- </div> -->
+      <li class="slider">
+        <div class="progress"></div>
+        <div class="range-input">
+           <input type="range" class="range-min" min="0" max="18000" value="0">
+           <input type="range" class="range-max" min="0" max="18000" value="9000">
+        </div>
       </ul>
     </fieldset>
   <div class="button-filter">

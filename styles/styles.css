@@ -665,12 +665,22 @@ body {
 }
 
 .hotel-filter-list {
+  margin: 0;
   min-width: 150px;
   padding: 0;
 }
 
+.hotel-prise-item {
+  display: flex;
+  column-gap: 2px;
+}
+
 .hotel-filter-item {
   margin-bottom: 16px;
+}
+
+.hotel-filter-item:last-child {
+  margin-bottom: 0;
 }
 
 .hotel-filter-group {
@@ -680,22 +690,19 @@ body {
 }
 
 .catalog-filter-title {
+  margin-bottom: 32px;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.2;
   text-transform: capitalize;
   color: #ffffff;
+
 }
 
 .button-filter {
-  margin-top: 42px;
+  margin-top: 56px;
   flex-direction: column;
   display: flex;
-}
-
-.input-prise {
-  display: flex;
-  column-gap: 2px;
 }
 
 .control {
@@ -782,15 +789,49 @@ body {
   background-color: #f2f2f2;
 }
 
-.input-calculation {
-  appearance: none;
-  border: 1px solid #ffffff;
+.slider {
+  margin-top: 36px;
+  position: relative;
   width: 287px;
-  height: 0;
-  outline: none;
+  height: 4px;
+  background-color: gray;
 }
 
+.slider .progress  {
+  position: absolute;
+  width: 226px;
+  height: 4px;
+  background-color: #ffffff;
+}
 
+.range-input input {
+  position: absolute;
+  left: -2px;
+  top: -2px;
+  height: 4px;
+  width: 100%;
+  pointer-events: none;
+  background: none;
+  appearance: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  border-radius: 5px;
+  width: 20px;
+  height: 20px;
+  pointer-events: auto;
+  background-color: #ffffff;
+  -webkit-appearance: none;
+}
+
+input[type="range"]::-moz-range-thumb {
+  border-radius: 5px;
+  width: 20px;
+  height: 20px;
+  pointer-events: auto;
+  background-color: #ffffff;
+  -moz-appearance: none;
+}
 
 .button-submit {
   font-family: "PT Sans", sans-serif;
