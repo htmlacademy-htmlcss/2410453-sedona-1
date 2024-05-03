@@ -351,7 +351,7 @@ body {
   line-height: 28px;
   text-transform: uppercase;
   text-align: center;
-  color: #000;
+  color: #000000;
 }
 
 .infrastructure-item-description {
@@ -479,6 +479,11 @@ body {
   width: 452px;
   height: 52px;
   background: #f2f2f2;
+}
+
+.field:hover {
+  border-radius: 4px;
+  background-color: #e6e6e6;
 }
 
 .subscribe-button {
@@ -620,6 +625,15 @@ body {
   padding-top: 8px;
   padding-bottom: 40px;
   display: flex;
+}
+
+.breadcrumbs-title {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.3125;
+  color: #ffffff;
 }
 
 .breadcrumbs-link {
@@ -1032,7 +1046,7 @@ input[type="range"]::-moz-range-thumb {
   font-weight: 700;
   font-size: 24px;
   line-height: 1.16;
-  color: #000;
+  color: #000000;
   padding-top: 16px;
 }
 
@@ -1042,7 +1056,7 @@ input[type="range"]::-moz-range-thumb {
   font-weight: 700;
   font-size: 24px;
   line-height: 1.18;
-  color: #000;
+  color: #000000;
   text-decoration: none;
 }
 
@@ -1052,7 +1066,7 @@ input[type="range"]::-moz-range-thumb {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.16;
-  color: #333;
+  color: #333333;
 }
 
 .hotel-card-price {
@@ -1062,7 +1076,7 @@ input[type="range"]::-moz-range-thumb {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.16;
-  color: #333
+  color: #333333;
 }
 
 .button-details {
