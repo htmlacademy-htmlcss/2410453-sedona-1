@@ -158,19 +158,25 @@
         <legend class="catalog-filter-title">Стоимость, ₽:</legend>
         <ul class="hotel-filter-list">
           <li class="hotel-prise-item">
-            <label class="hotel-filter-label">от
-               <input class="input-prise-min" type="number" name="price-min" value="0" placeholder="от">
-               </label>
-                <label class="hotel-filter-label">до
-                  <input class="input-prise-max" type="number" name="price-max" value="9000" placeholder="до">
-                  </label>
+            <label class="hotel-filter-label-from">от
+            </label>
+               <input class="input-prise input-prise-min" type="number" name="price-min" value="0">
+                <label class="hotel-filter-label-before">до
+                </label>
+                    <input class="input-prise input-prise-max" type="number" name="price-max" value="9000">
                 </li>
       <li class="slider">
-        <div class="progress"></div>
-        <div class="range-input">
-           <input type="range" class="range-min" min="0" max="18000" value="0">
-           <input type="range" class="range-max" min="0" max="18000" value="9000">
-        </div>
+        <div class="range">
+          <div class="range-scale">
+            <div class="range-bar" style="left: 0; width: 226px;">
+              <button type="button" class="range-toggle toggle-min">
+                <span class="visually-hidden">Изменить минимальную цену.</span>
+              </button>
+              <button type="button" class="range-toggle toggle-max">
+                <span class="visually-hidden">Изменить максимальную цену.</span>
+              </button>
+            </div>
+          </div>
       </ul>
     </fieldset>
   <div class="button-filter">
@@ -193,7 +199,7 @@
 </select>
 <ul class="show-buttons">
   <li class="show-buttons-item">
-    <a class="show-buttons-link button-current button-current-castom" href="#">
+    <a class="show-buttons-link button-current-castom" href="#">
      <span class="visually-hidden">Показать гостиницы таблицей</span>
      <svg aria-hidden="true" focusable="false" width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
       <g clip-path="url(#clip0_112901_169)">
@@ -248,7 +254,7 @@
 <section class="catalog-hotel">
   <ul class="hotel-list">
     <li class="hotel-card">
-      <a class="hotel-card-link" href="#">
+      <a class="hotel-card-link" tabindex="-1" href="#">
       <img class="hotel-card-image" src="images/hotel-1.jpg" width="300"
       height="212" alt="Вид из гостиницы Amara Resort & Spa">
       <h3 class="hotel-card-title">Amara Resort & Spa</h3>
@@ -263,7 +269,7 @@
       <p class="hotel-card-rating">Рейтинг: 8,5</p>
     </li>
     <li class="hotel-card">
-    <a class="hotel-card-link" href="#">
+    <a class="hotel-card-link" tabindex="-1" href="#">
       <img class="hotel-card-image" src="images/hotel-2.jpg" width="300"
       height="212" alt="Вид из гостиницы Villas at Poco Diablo">
       <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
@@ -278,7 +284,7 @@
       <p class="hotel-card-rating">Рейтинг: 9,2</p>
     </li>
     <li class="hotel-card">
-      <a class="hotel-card-link" href="#">
+      <a class="hotel-card-link" tabindex="-1" href="#">
       <img class="hotel-card-image" src="images/hotel-3.jpg" width="300"
       height="212" alt="Вид из гостиницы Desert Quail Inn">
       <h3 class="hotel-card-title">Desert Quail Inn</h3>
@@ -293,7 +299,7 @@
       <p class="hotel-card-rating">Рейтинг: 6,9</p>
     </li>
     <li class="hotel-card">
-      <a class="hotel-card-link" href="#">
+      <a class="hotel-card-link" tabindex="-1" href="#">
       <img class="hotel-card-image" src="images/hotel-4.jpg" width="300"
       height="212" alt="Вид из гостиницы GreenTree Inn">
       <h3 class="hotel-card-title">GreenTree Inn</h3>
