@@ -693,6 +693,7 @@ body {
 }
 
 .hotel-prise-item {
+  position: relative;
   display: flex;
   column-gap: 2px;
 }
@@ -719,6 +720,30 @@ body {
   text-transform: capitalize;
   color: #ffffff;
 }
+
+.hotel-filter-label-from {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.33;
+  color: #000000;
+  opacity: 0.3;
+  position: absolute;
+  left: 106px;
+  bottom: 12px;
+}
+
+
+.hotel-filter-label-before {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.33;
+  color: #000000;
+  opacity: 0.3;
+  position: absolute;
+  left: 249px;
+  bottom: 12px;
+}
+
 
 .button-filter {
   margin-top: 56px;
@@ -802,6 +827,11 @@ body {
 }
 
 .input-prise-min {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.33;
+  color: #000000;
   border-radius: 4px 0 0 4px;
   padding: 12px 20px;
   width: 143px;
@@ -811,6 +841,11 @@ body {
 }
 
 .input-prise-max {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.33;
+  color: #000000;
   border-radius: 0 4px 4px 0;
   padding: 12px 20px;
   width: 143px;
@@ -819,49 +854,57 @@ body {
   background-color: #f2f2f2;
 }
 
-/* .slider {
-  margin-top: 36px;
+
+.range-scale {
   position: relative;
   width: 287px;
   height: 4px;
+  margin-top: 42px;
   background-color: gray;
 }
 
-.slider .progress  {
+.range-bar {
   position: absolute;
-  width: 226px;
   height: 4px;
   background-color: #ffffff;
 }
 
-.range-input input {
-  position: absolute;
-  left: -2px;
-  top: -2px;
-  height: 4px;
-  width: 100%;
-  pointer-events: none;
-  background: none;
+.range-toggle {
+  position: relative;
+  border-radius: 5px;
+  width: 20px;
+  height: 20px;
+  border: 0 solid #ffffff;
+  cursor: pointer;
+}
+
+.range-toggle:hover {
+  opacity: 0.6;
+}
+
+.range-toggle:active {
+  outline: 3px solid #83b3d3;
+}
+
+.range-toggle:focus {
+  outline: 3px solid #83b3d3;
+}
+
+.toggle-min {
+  top: -15px;
+  left: 0;
+}
+
+.toggle-max {
+  top: -15px;
+  right: -182px;
+}
+
+.input-prise::-webkit-outer-spin-button,
+.input-prise::-webkit-inner-spin-button {
   appearance: none;
+  margin: 0;
 }
-
-input[type="range"]::-webkit-slider-thumb {
-  border-radius: 5px;
-  width: 20px;
-  height: 20px;
-  pointer-events: auto;
-  background-color: #ffffff;
-  -webkit-appearance: none;
-}
-
-input[type="range"]::-moz-range-thumb {
-  border-radius: 5px;
-  width: 20px;
-  height: 20px;
-  pointer-events: auto;
-  background-color: #ffffff;
-  -moz-appearance: none;
-} */
 
 .button-submit {
   font-family: "PT Sans", sans-serif;
