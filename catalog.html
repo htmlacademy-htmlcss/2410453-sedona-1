@@ -50,7 +50,7 @@
   <main class="main-container main-inner">
     <div class="selection-parameters-filter">
       <section class="inner-header">
-        <h1 class="header-title">Гостинницы Седоны</h1>
+        <h1 class="header-title">Гостиницы Седоны</h1>
            <ul class="breadcrumbs">
             <li class="breadcrumbs-item">
 
@@ -66,7 +66,6 @@
   </li>
   <li class="breadcrumbs-item">
   <p class="breadcrumbs-title">Гостиницы</p>
-
 </li>
 </ul>
 </section>
@@ -77,18 +76,18 @@
       <div class="catalog-filter-container">
        <fieldset class="hotel-filter-group">
           <legend class="catalog-filter-title">Инфраструктура:</legend>
-           <ul class="hotel-filter-list">
-            <li class="hotel-filter-item">
-            <label class="control">
-              <input class="control-input" type="checkbox" name="swimming-pool" checked>
-              <div class="checkbox">
-                <svg class="checkmark" width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M11 0.5L4.5 7.9L1.1 4L0 5.2L4.5 10.4L12.2 1.8L11 0.5Z" fill="#3F5E72"/>
-                  </svg>
-              </div>
-           Бассеин
-        </label>
-      </li>
+            <ul class="hotel-filter-list">
+              <li class="hotel-filter-item">
+                <label class="control">
+                  <input class="control-input" type="checkbox" name="swimming-pool" checked>
+                  <div class="checkbox">
+                    <svg class="checkmark" width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M11 0.5L4.5 7.9L1.1 4L0 5.2L4.5 10.4L12.2 1.8L11 0.5Z" fill="#3F5E72"/>
+                    </svg>
+                  </div>
+                  <span class="control-label">Бассеин</span>
+                </label>
+              </li>
       <li class="hotel-filter-item">
         <label class="control">
           <input class="control-input" type="checkbox" name="parking" checked>
@@ -97,7 +96,7 @@
               <path d="M11 0.5L4.5 7.9L1.1 4L0 5.2L4.5 10.4L12.2 1.8L11 0.5Z" fill="#3F5E72"/>
               </svg>
           </div>
-          Парковка
+          <span class="control-label">Парковка</span>
              </label>
             </li>
           <li class="hotel-filter-item">
@@ -108,7 +107,7 @@
             <path d="M11 0.5L4.5 7.9L1.1 4L0 5.2L4.5 10.4L12.2 1.8L11 0.5Z" fill="#3F5E72"/>
             </svg>
         </div>
-          Wi-Fi
+        <span class="control-label">Wi-Fi</span>
          </label>
         </li>
       </ul>
@@ -119,14 +118,14 @@
           <li class="hotel-filter-item">
           <label class="control">
             <input class="control-input" type="radio" name="accommodation-group" value="hotel" checked>
-            <div class="radio">
-              <svg class="checkmark-dot" width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0 5.5C0 2.73858 2.23858 0.5 5 0.5C7.76142 0.5 10 2.73858 10 5.5C10 8.26142 7.76142 10.5 5 10.5C2.23858 10.5 0 8.26142 0 5.5Z" fill="#3F5E72"/>
+              <div class="radio">
+                <svg class="checkmark-dot" width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0 5.5C0 2.73858 2.23858 0.5 5 0.5C7.76142 0.5 10 2.73858 10 5.5C10 8.26142 7.76142 10.5 5 10.5C2.23858 10.5 0 8.26142 0 5.5Z" fill="#3F5E72"/>
                 </svg>
-            </div>
-         Гостиница
-      </label>
-    </li>
+              </div>
+                 <span class="control-label">Гостиница</span>
+            </label>
+          </li>
     <li class="hotel-filter-item">
       <label class="control">
         <input class="control-input" type="radio" name="accommodation-group" value="motel">
@@ -135,7 +134,7 @@
             <path d="M0 5.5C0 2.73858 2.23858 0.5 5 0.5C7.76142 0.5 10 2.73858 10 5.5C10 8.26142 7.76142 10.5 5 10.5C2.23858 10.5 0 8.26142 0 5.5Z" fill="#3F5E72"/>
             </svg>
         </div>
-        Мотель
+        <span class="control-label">Мотель</span>
            </label>
           </li>
         <li class="hotel-filter-item">
@@ -146,7 +145,7 @@
           <path d="M0 5.5C0 2.73858 2.23858 0.5 5 0.5C7.76142 0.5 10 2.73858 10 5.5C10 8.26142 7.76142 10.5 5 10.5C2.23858 10.5 0 8.26142 0 5.5Z" fill="#3F5E72"/>
           </svg>
       </div>
-      Апартаменты
+      <span class="control-label">Апартаменты</span>
        </label>
       </li>
     </ul>
@@ -157,12 +156,10 @@
         <legend class="catalog-filter-title">Стоимость, ₽:</legend>
         <ul class="hotel-filter-list">
           <li class="hotel-prise-item">
-            <label class="hotel-filter-label-from">от
-            </label>
-               <input class="input-prise input-prise-min" type="number" name="price-min" value="0">
-                <label class="hotel-filter-label-before">до
-                </label>
-                    <input class="input-prise input-prise-max" type="number" name="price-max" value="9000">
+            <label class="hotel-filter-label-from" for="price-min">от</label>
+               <input class="input-prise input-prise-min" type="number" name="price-min" id="price-min" value="0">
+                <label class="hotel-filter-label-before" for="price-max">до</label>
+                    <input class="input-prise input-prise-max" type="number" name="price-max" id="price-max" value="9000">
                 </li>
       <li class="slider">
         <div class="range">
@@ -192,7 +189,7 @@
   <span class="result">38</span>
 </p>
 <select class="select-control" aria-label="Сортировка">
-  <option value="cheap">Сначала дешёвое</option>
+  <option value="cheap">Сначала дешевые</option>
   <option value="expensive">Сначала дорогое</option>
   <option value="popular">Сначала популярное</option>
 </select>
