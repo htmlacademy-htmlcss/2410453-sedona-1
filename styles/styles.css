@@ -120,11 +120,11 @@ body {
   display: block;
 }
 
-.navigation-link-castom:hover {
+.navigation-link-custom:hover {
   color: #756157;
 }
 
-.navigation-link-castom:active {
+.navigation-link-custom:active {
   color: rgba(117, 97, 87, 0.3);
 }
 
@@ -195,11 +195,11 @@ body {
   background-repeat: no-repeat;
   background-position: center bottom, center;
   background-size: 1200px 57px, cover;
+  background-color: #6590B7;
   text-align: center;
   min-height: 485px;
   padding: 51px;
 }
-
 
 .advantages-list,
 .navigation-list,
@@ -466,6 +466,7 @@ body {
   background: url("../images/image-e-mail.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: #6590B7;
   color: #ffffff;
 }
 
@@ -475,9 +476,7 @@ body {
   color: #000000;
 }
 
-.subscribe
-:not(.subscribe-description)
-.subscribe-description {
+.subscribe-simple  .subscribe-description {
   color: #333333;
 }
 
@@ -653,6 +652,7 @@ body {
   background-image: url("../images/filter-hotel.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: #4C677E;
   padding-left: 69px;
   padding-right: 70px;
   padding-top: 35px;
@@ -730,7 +730,7 @@ body {
   display: flex;
 }
 
-.catalog-prise-container {
+.catalog-price-container {
   column-gap: 70px;
   display: flex;
 }
@@ -741,7 +741,7 @@ body {
   padding: 0;
 }
 
-.hotel-prise-item {
+.hotel-price-item {
   position: relative;
   display: flex;
   column-gap: 2px;
@@ -852,7 +852,7 @@ body {
   display: none;
 }
 
-.control input:checked + .checkbox .checkmark {
+.control-input:checked + .checkbox .checkmark {
   display: block;
 }
 
@@ -884,8 +884,18 @@ body {
   display: none;
 }
 
-.control input:checked + .radio .checkmark-dot {
+.control-input:checked + .radio .checkmark-dot {
   display: block;
+}
+
+.control-input:hover + .radio,
+.control-input:hover ~ .checkmark-dot  {
+  opacity: 0.6;
+}
+
+.control-input:active + .radio,
+.control-input:active ~ .checkmark-dot  {
+  opacity: 0.3;
 }
 
 .control-input:focus + .radio {
@@ -898,7 +908,7 @@ body {
   opacity: 0.5;
 }
 
-.input-prise-min {
+.input-price-min {
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -913,7 +923,7 @@ body {
   padding-right: 50px;
 }
 
-.input-prise-max {
+.input-price-max {
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -973,8 +983,8 @@ body {
   right: -183px;
 }
 
-.input-prise::-webkit-outer-spin-button,
-.input-prise::-webkit-inner-spin-button {
+.input-price::-webkit-outer-spin-button,
+.input-price::-webkit-inner-spin-button {
   appearance: none;
   margin: 0;
 }
@@ -1240,7 +1250,7 @@ body {
   background-color:  #e5e5e5;
 }
 
-.button-favourite {
+.button-favorite {
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 16px;
@@ -1256,20 +1266,20 @@ body {
   cursor: pointer;
 }
 
-.button-favourite:hover {
+.button-favorite:hover {
   background-color: #68a2ca;
 }
 
-.button-favourite:focus {
+.button-favorite:focus {
   background-color: #68a2ca;
 }
 
-.button-favourite:active {
+.button-favorite:active {
   color: rgba(255, 255, 255, 0.3);
   background-color: #82b3d3;
 }
 
-.button-favourite:disabled {
+.button-favorite:disabled {
   color: rgba(255, 255, 255, 0.3);
   background-color: #e5e5e5;
 }
@@ -1305,7 +1315,7 @@ body {
   width: 18px;
 }
 
-.button-in-favourite {
+.button-in-favorite {
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 16px;
@@ -1321,20 +1331,20 @@ body {
   cursor: pointer;
 }
 
-.button-in-favourite:hover {
+.button-in-favorite:hover {
   background-color:  #6c9e42;
 }
 
-.button-in-favourite:focus {
+.button-in-favorite:focus {
   background-color:  #6c9e42;
 }
 
-.button-in-favourite:active {
+.button-in-favorite:active {
   color: rgba(255, 255, 255, 0.3);
   background-color: #7db54f;
 }
 
-.button-in-favourite:disabled {
+.button-in-favorite:disabled {
   color: rgba(255, 255, 255, 0.3);
   background-color: #e5e5e5;
 }
