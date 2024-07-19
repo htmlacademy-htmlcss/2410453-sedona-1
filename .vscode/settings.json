@@ -21,5 +21,6 @@
   "html.format.endWithNewline": true,
   "html.format.indentInnerHtml": true,
   "editor.formatOnPaste": false,
-  "editor.formatOnSave": false
+  "editor.formatOnSave": false,
+  "liveServer.settings.port": 5501
 }
